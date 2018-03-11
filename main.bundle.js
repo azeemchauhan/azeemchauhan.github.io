@@ -177,7 +177,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 var ROUTES = [
-    { path: '', redirectTo: '/login', pathMatch: 'full' },
+    { path: '', redirectTo: '/planets', pathMatch: 'full' },
     { path: 'login', loadChildren: './modules/login/login.module#LoginModule' },
     { path: 'planets', loadChildren: './modules/search/search.module#SearchModule' },
     { path: '404', component: __WEBPACK_IMPORTED_MODULE_2__common_components_404_PageNotFound_component__["a" /* PageNotFoundComponent */], pathMatch: 'full' },
