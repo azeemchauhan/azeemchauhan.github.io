@@ -267,7 +267,7 @@ var PageNotFoundComponent = /** @class */ (function () {
 /***/ "../../../../../src/app/common/components/footer/footer.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-expand-sm navbar-dark bg-dark\" style=\"margin-top:20px\">\n    <p class=\"credit\">Created By @Azeem Chauhan</p>\n</nav>"
+module.exports = "<nav>\n    <p class=\"credit\">Created By @Azeem Chauhan</p>\n</nav>"
 
 /***/ }),
 
@@ -279,7 +279,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, ".credit {\n  text-align: center;\n  font-size: 14px;\n  color: silver;\n  margin: auto; }\n", ""]);
+exports.push([module.i, "nav {\n  margin-top: 15px; }\n  nav .credit {\n    padding-bottom: 10px;\n    text-align: center;\n    font-size: 14px;\n    color: silver;\n    margin: auto; }\n", ""]);
 
 // exports
 
@@ -328,7 +328,7 @@ var FooterComponent = /** @class */ (function () {
 /***/ "../../../../../src/app/common/components/header/header.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n        <header class=\"blog-header py-3\">\n            <div class=\"row flex-nowrap justify-content-between align-items-center\">\n              <div class=\"col-4 pt-1\">\n                <!-- <a class=\"text-muted\" href=\"#\">Subscribe</a> -->\n              </div>\n              <div class=\"col-4 text-center\">\n                <h2 class=\"blog-header-logo text-dark\">STAR WARS </h2>\n              </div>\n              <div class=\"col-4 d-flex justify-content-end align-items-center\">\n                <a *ngIf=\"!user.isLogin\" class=\"btn btn-sm btn-outline-secondary\" [routerLink]=\"['/login']\">Sign in</a>\n                <a *ngIf=\"user.isLogin\" class=\"btn btn-sm btn-outline-secondary\" (click)=\"logout()\">Sign out</a>\n              </div>\n            </div>\n        </header>\n    </div>"
+module.exports = "<div class=\"container\">\n        <header class=\"blog-header py-3\">\n            <div class=\"row flex-nowrap justify-content-between align-items-center\">\n              <div class=\"pt-1\">\n                <!-- <a class=\"text-muted\" href=\"#\">Subscribe</a> -->\n              </div>\n              <div class=\"text-center\">\n                <h2 class=\"blog-header-logo text-dark\">STAR WARS </h2>\n              </div>\n              <div class=\"d-flex justify-content-end align-items-center btn-login\">\n                <a *ngIf=\"!user.isLogin\" class=\"btn btn-sm btn-outline-secondary\" [routerLink]=\"['/login']\">Sign in</a>\n                <a *ngIf=\"user.isLogin\" class=\"btn btn-sm btn-outline-secondary\" (click)=\"logout()\">Sign out</a>\n              </div>\n            </div>\n        </header>\n    </div>"
 
 /***/ }),
 
@@ -340,7 +340,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, ".btn-login {\n  margin-right: 20px; }\n", ""]);
 
 // exports
 
