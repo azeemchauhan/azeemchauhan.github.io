@@ -7,7 +7,7 @@ webpackJsonp(["search.module"],{
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return APP_CONSTANT; });
 var APP_CONSTANT = {
     BaseUrl: 'https://swapi.co/api/',
-    SEARCH_LIMIT: 2
+    SEARCH_LIMIT: 15
 };
 
 
@@ -205,7 +205,7 @@ var PlanetCircleComponent = /** @class */ (function () {
     **/
     PlanetCircleComponent.prototype.createRadius = function () {
         var population = parseInt(this.config.population);
-        var max = 1000000000000;
+        var max = 1000000000000; //max assume
         var RADIUS = 80;
         var default_radious = 25;
         var radius = Math.ceil((population * RADIUS) / max);
@@ -233,10 +233,10 @@ var PlanetCircleComponent = /** @class */ (function () {
         this._render.setAttribute(this.circleEle.nativeElement, 'fill', this.setClimate());
     };
     PlanetCircleComponent.prototype.ngOnInit = function () {
-        console.log(this.config);
+        // console.log(this.config);
     };
     PlanetCircleComponent.prototype.ngAfterContentInit = function () {
-        console.log(this.createRadius());
+        // console.log(this.createRadius());
         this.renderPlanet();
     };
     __decorate([
@@ -631,7 +631,7 @@ var SearchComponent = /** @class */ (function () {
     SearchComponent.prototype.updateResults = function (results) {
         this.loading = false;
         this.results = results;
-        console.log("results:", this.results); // uncomment to take a look
+        // console.log("results:", this.results); // uncomment to take a look
     };
     SearchComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["o" /* Component */])({
